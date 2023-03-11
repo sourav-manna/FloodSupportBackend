@@ -70,6 +70,3 @@ def login():
         return {"message":"Invalid credentials","status": True}
     else:
         return {"docs":{"name": log_data['name'], "category": log_data['category']}, "status": True}
-
-app.run(port='8000')
-
