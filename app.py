@@ -67,6 +67,6 @@ def login():
     #print(data)
     log_data = collection.find_one(data)
     if collection.find_one(data) is None:
-        return {"message":"Invalid credentials","status": True}
+        return {"message":"Invalid credentials","status": False}
     else:
         return {"docs":{"name": log_data['name'], "category": log_data['category']}, "status": True}
