@@ -1,9 +1,12 @@
+import os
 import pymongo
 from flask import Flask, render_template, request, url_for, redirect
 from flask_cors import CORS
 from pymongo import MongoClient
 import json
 
+
+os.environ['FLASK_ENV'] = 'production'
 # ...
 
 app = Flask(__name__)
