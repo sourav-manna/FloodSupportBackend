@@ -68,5 +68,5 @@ def login():
     else:
         return {"docs":{"name": log_data['name'], "category": log_data['category']}, "status": True}
 
-app.run()
+app.run(port='8000')
 
